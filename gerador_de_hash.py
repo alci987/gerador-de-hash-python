@@ -1,9 +1,15 @@
 import hashlib
 
-string = input('Digite o texto a ser encriptdo: ')
+"""
+hashlib consiste em um módulo que implementa muitos algoritmos de hash seguro 
+e de resumo de mensagem chamados. Também pode incluir algoritmos adicionais disponíveis, 
+dependendo da biblioteca OpenSSL que o Python usa em sua plataforma.
+"""
+
+string = input('Digite o texto a ser encriptdo: ')  # obtem a frase que o usuário quer encriptar
 
 """
-se o texto for passado direto no método hashlib.md5, basta adicionr o b
+se o texto for passado direto no método hashlib, basta adicionr o b
 Ex: hashlib.md5(b"texto")
 
 Se for passado uma variável, deve-se usar a função encode
